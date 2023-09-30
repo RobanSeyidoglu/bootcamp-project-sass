@@ -1,0 +1,42 @@
+@import "../base/main.scss";
+h1 {
+  font-size: 10rem;
+  color: red;
+  @include breakpoint(lg, min) {
+    color: lightgreen;
+  }
+}
+.container {
+display: flex;
+  border: 1px solid red;
+
+  nav {
+    // grid-area: nav;
+    background-color: blue;
+    
+  }
+  .about {
+    // grid-area: about;
+    background-color: red;
+  }
+  .experience {
+    // grid-area: experience;
+    background-color: yellow;
+  }
+  .education {
+    // grid-area: education;
+    background-color: green;
+  }
+  .skills {
+    // grid-area: skills;
+    background-color: aqua;
+  }
+  .interests {
+    // grid-area: interests;
+    background-color: black;
+  }
+  .awards {
+    // grid-area: awards;
+    background-color: brown;
+  }
+}
