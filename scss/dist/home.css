@@ -200,6 +200,7 @@ table {
     display: none;
   }
   .container .left nav ul {
+    display: none;
     text-align: start;
     font-size: 1rem;
     font-weight: bold;
@@ -307,6 +308,11 @@ body {
   flex-flow: column;
   gap: 3rem;
 }
+.container .right .experience h2 {
+  font-size: 2rem;
+  color: #343A40;
+  font-weight: bold;
+}
 .container .right .experience .box {
   display: flex;
   flex-flow: column;
@@ -314,7 +320,31 @@ body {
 .container .right .experience .box .date-header {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
-
-/*Start Responsive Body*/
-/*End Responsive Body*//*# sourceMappingURL=home.css.map */
+.container .right .experience .box .date-header .text h2 {
+  font-size: 1.5rem;
+  color: #343A40;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+.container .right .experience .box .date-header .text h3 {
+  color: #6c757d;
+  font-size: 1.2rem;
+  padding-bottom: 1.8rem;
+}
+.container .right .experience .box .date-header p {
+  font-size: 1.1rem;
+  color: #bd5d38;
+}
+.container .right .experience .box p {
+  max-width: 55rem;
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+@media (max-width: 767.98px) {
+  .container .right .experience .box .date-header {
+    flex-flow: column;
+  }
+}/*# sourceMappingURL=home.css.map */

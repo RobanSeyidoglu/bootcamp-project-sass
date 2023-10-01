@@ -1,3 +1,4 @@
+@import "../base/breakpoints-mixin";
 body {
   position: relative;
 }
@@ -93,28 +94,56 @@ body {
       display: flex;
       flex-flow: column;
       gap: 3rem;
+
+      h2 {
+        font-size: 2rem;
+        color: $header-color;
+        font-weight: bold;
+      }
       .box {
         display: flex;
         flex-flow: column;
         .date-header {
           display: flex;
           justify-content: space-between;
+          gap: 20px;
+          .text {
+            h2 {
+              font-size: 1.5rem;
+              color: $header-color;
+              font-weight: normal;
+              padding-bottom: 10px;
+            }
+            h3 {
+              color: $primary-color;
+              font-size: 1.2rem;
+              padding-bottom: 1.8rem;
+            }
+          }
+          p {
+            font-size: 1.1rem;
+            color: $secondary-color;
+          }
+        }
+        p {
+          max-width: 55rem;
+          color: $primary-color;
+          font-size: 1.1rem;
+          line-height: 25px;
         }
       }
     }
     /* End Experience Section*/
   }
-}
-/*Start Responsive Body*/
-// @include breakpoint(lg) {
-//   .container {
-//     .right {
-//       .about {
-//         h1 {
-//           font-size: 3rem;
-//         }
-//       }
-//     }
-//   }
-// }
-/*End Responsive Body*/
+  @include breakpoint(md) {
+    .right {
+      .experience {
+        .box {
+          .date-header {
+            flex-direction: column; 
+          }
+        }
+      }
+    }
+  }
+  
