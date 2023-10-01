@@ -65,26 +65,25 @@
 @include breakpoint(lg) {
   .container {
     flex-flow: column;
-    .right{
-      .about{
-        #social-media{
+    .right {
+      .about {
+        #social-media {
           gap: 15px;
           justify-content: center;
-          a{
+          a {
             width: 2.5rem;
             height: 2.5rem;
-            i{
+            i {
               font-size: 1rem;
             }
           }
         }
-        #header{
+        #header {
           font-size: 8vw;
-         
         }
-        #adress{
+        #adress {
           font-size: 5vw;
-          a{
+          a {
             font-size: 5vw;
           }
         }
