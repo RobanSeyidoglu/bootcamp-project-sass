@@ -162,6 +162,7 @@ table {
   }
   .container .right .about #adress {
     font-size: 5vw;
+    line-height: 30px;
   }
   .container .right .about #adress a {
     font-size: 5vw;
@@ -228,8 +229,12 @@ body {
   justify-content: space-around;
   /* Start About Section*/
   /* End About Section*/
-  /* Start Experience Section*/
-  /* End Experience Section*/
+  /* Start Experience & Education Section*/
+  /* End Experience & Education Section*/
+  /* Start Skills Section*/
+  /* End Skills Section*/
+  /* Start Interests Section*/
+  /* End Interests Section*/
 }
 .container .right .about,
 .container .right .experience,
@@ -302,51 +307,90 @@ body {
 .container .right .about .social-media a i {
   color: white;
 }
-.container .right .experience, .container .right .education {
-  padding-top: 3rem;
+.container .right .experience,
+.container .right .education {
+  padding-top: 200px;
+  margin-bottom: 200px;
   display: flex;
   flex-flow: column;
   gap: 3rem;
   padding-bottom: 50px;
-  padding-top: 50px;
+  margin-top: 100px;
 }
-.container .right .experience h2, .container .right .education h2 {
+.container .right .experience h2,
+.container .right .education h2 {
   font-size: 2rem;
   color: #343A40;
   font-weight: bold;
 }
-.container .right .experience .box, .container .right .education .box {
+.container .right .experience .box,
+.container .right .education .box {
   display: flex;
   flex-flow: column;
 }
-.container .right .experience .box .date-header, .container .right .education .box .date-header {
+.container .right .experience .box .date-header,
+.container .right .education .box .date-header {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
-.container .right .experience .box .date-header .text h2, .container .right .education .box .date-header .text h2 {
+.container .right .experience .box .date-header .text h2,
+.container .right .education .box .date-header .text h2 {
   font-size: 1.5rem;
   color: #343A40;
   font-weight: normal;
   padding-bottom: 10px;
 }
-.container .right .experience .box .date-header .text h3, .container .right .education .box .date-header .text h3 {
+.container .right .experience .box .date-header .text h3,
+.container .right .education .box .date-header .text h3 {
   color: #6c757d;
   font-size: 1.2rem;
   padding-bottom: 1.8rem;
 }
-.container .right .experience .box .date-header p, .container .right .education .box .date-header p {
+.container .right .experience .box .date-header p,
+.container .right .education .box .date-header p {
   font-size: 1.1rem;
   color: #bd5d38;
 }
-.container .right .experience .box p, .container .right .education .box p {
+.container .right .experience .box p,
+.container .right .education .box p {
   max-width: 55rem;
   color: #6c757d;
   font-size: 1.1rem;
   line-height: 25px;
 }
+.container .right .skills {
+  padding-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+.container .right .skills h2 {
+  font-size: 2rem;
+  color: #343A40;
+  font-weight: bold;
+}
+.container .right .skills h3,
+.container .right .skills p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.container .right .skills .icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+.container .right .skills .futures p {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
 @media (max-width: 767.98px) {
-  .container .right .experience .box .date-header, .container .right .education .box .date-header {
+  .container .right .experience .box .date-header,
+  .container .right .education .box .date-header {
     flex-direction: column;
   }
 }/*# sourceMappingURL=home.css.map */
