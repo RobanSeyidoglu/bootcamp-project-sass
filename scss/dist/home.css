@@ -22,7 +22,6 @@ a {
 }
 
 .container {
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -142,6 +141,75 @@ table {
   color: rgba(248, 249, 250, 0.7);
 }
 
+/* Start Responsive Nav Bar*/
+@media (max-width: 991.98px) {
+  .container {
+    flex-flow: column;
+  }
+  .container .right .about #social-media {
+    gap: 15px;
+    justify-content: center;
+  }
+  .container .right .about #social-media a {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .container .right .about #social-media a i {
+    font-size: 1rem;
+  }
+  .container .right .about #header {
+    font-size: 8vw;
+  }
+  .container .right .about #adress {
+    font-size: 5vw;
+  }
+  .container .right .about #adress a {
+    font-size: 5vw;
+  }
+  .container .left nav {
+    flex-flow: column;
+    width: 100vw;
+    min-height: 5rem;
+    position: fixed;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .container .left nav .icon-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .left nav .icon-name p {
+    display: block;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: "Mulish", sans-serif;
+  }
+  .container .left nav .icon-name .icon {
+    display: flex;
+    padding: 10px;
+    outline: 0.5px solid rgba(204, 204, 204, 0.5);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+  .container .left nav .img {
+    display: none;
+  }
+  .container .left nav ul {
+    text-align: start;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+  .container .left nav ul li a {
+    color: white;
+  }
+}
+/* End Responsive Nav Bar*/
 /* End Nav Bar*/
 body {
   position: relative;
@@ -154,12 +222,13 @@ body {
 .container .right {
   max-width: 75rem;
   padding-top: 250px;
-  height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   /* Start About Section*/
   /* End About Section*/
+  /* Start Experience Section*/
+  /* End Experience Section*/
 }
 .container .right .about,
 .container .right .experience,
@@ -168,8 +237,9 @@ body {
 .container .right .skills,
 .container .right .interests {
   padding-left: 3rem;
+  padding-right: 2rem;
 }
-.container .right hr {
+.container .right .hr {
   height: 1px;
   background-color: #ccc;
   border: none;
@@ -193,7 +263,7 @@ body {
   text-transform: uppercase;
 }
 .container .right .about h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #343A40;
   font-family: "Cambay", sans-serif;
   font-weight: bold;
@@ -212,7 +282,8 @@ body {
 }
 .container .right .about .social-media {
   display: flex;
-  gap: 50px;
+  gap: 40px;
+  align-items: center;
   margin-bottom: 200px;
 }
 .container .right .about .social-media a {
@@ -229,4 +300,21 @@ body {
 }
 .container .right .about .social-media a i {
   color: white;
-}/*# sourceMappingURL=home.css.map */
+}
+.container .right .experience {
+  padding-top: 3rem;
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+}
+.container .right .experience .box {
+  display: flex;
+  flex-flow: column;
+}
+.container .right .experience .box .date-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Start Responsive Body*/
+/*End Responsive Body*//*# sourceMappingURL=home.css.map */
