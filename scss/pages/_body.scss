@@ -89,11 +89,13 @@ body {
     /* End About Section*/
 
     /* Start Experience Section*/
-    .experience {
+    .experience , .education {
       padding-top: 3rem;
       display: flex;
       flex-flow: column;
       gap: 3rem;
+      padding-bottom: 50px;
+      padding-top: 50px;
 
       h2 {
         font-size: 2rem;
@@ -137,7 +139,7 @@ body {
   }
   @include breakpoint(md) {
     .right {
-      .experience {
+      .experience, .education {
         .box {
           .date-header {
             flex-direction: column; 
@@ -146,4 +148,4 @@ body {
       }
     }
   }
-  
+}
