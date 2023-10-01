@@ -161,6 +161,7 @@ body {
 
       .icons {
         display: flex;
+        flex-flow: wrap;
         gap: 1.5rem;
         font-size: 1.5rem;
         color: $primary-color;
@@ -198,21 +199,21 @@ body {
     /* End Interests Section*/
 
     /* Start Awards Section*/
-    .awards{
-        padding-top: $sectionPadding;
-        margin-bottom: $sectionPadding;
-        h2 {
-            font-size: 2rem;
-            color: $header-color;
-            font-weight: bold;
-            padding-bottom: 3rem;
-          }
-          p {
-            font-size: 1.2rem;
-            color: $primary-color;
-            line-height: 25px;
-            padding-bottom: 10px;
-          }
+    .awards {
+      padding-top: $sectionPadding;
+      margin-bottom: $sectionPadding;
+      h2 {
+        font-size: 2rem;
+        color: $header-color;
+        font-weight: bold;
+        padding-bottom: 3rem;
+      }
+      p {
+        font-size: 1.2rem;
+        color: $primary-color;
+        line-height: 25px;
+        padding-bottom: 10px;
+      }
     }
     /* End Awards Section*/
   }
