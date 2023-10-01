@@ -235,6 +235,8 @@ body {
   /* End Skills Section*/
   /* Start Interests Section*/
   /* End Interests Section*/
+  /* Start Awards Section*/
+  /* End Awards Section*/
 }
 .container .right .about,
 .container .right .experience,
@@ -401,6 +403,22 @@ body {
   padding-bottom: 3rem;
 }
 .container .right .interests p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  line-height: 25px;
+  padding-bottom: 10px;
+}
+.container .right .awards {
+  padding-top: 200px;
+  margin-bottom: 200px;
+}
+.container .right .awards h2 {
+  font-size: 2rem;
+  color: #343A40;
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+.container .right .awards p {
   font-size: 1.2rem;
   color: #6c757d;
   line-height: 25px;

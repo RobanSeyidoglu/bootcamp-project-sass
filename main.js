@@ -1,4 +1,4 @@
-// Some Functions In The Header
+// Some Functions In The Nav
 let toggleMenu = document.querySelector(".icon");
 let menu = document.querySelector("ul");
 let body = document.body;
@@ -45,5 +45,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-// End Header
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+// End Nav
