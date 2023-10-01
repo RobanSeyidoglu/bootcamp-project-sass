@@ -19,7 +19,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 .container {
@@ -84,7 +83,11 @@ table {
 }
 
 /* Start Nav Bar*/
-.container nav {
+.container .left {
+  width: 16.8rem;
+  display: block;
+}
+.container .left nav {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -93,15 +96,30 @@ table {
   text-align: center;
   background-color: #bd5d38;
   width: 16.8rem;
-  height: 100vh;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
-.container nav p {
+.container .left nav .icon {
+  display: flex;
+  flex-flow: column;
+  gap: 7px;
   display: none;
 }
-.container nav .img {
-  max-width: 10rem;
+.container .left nav .icon span {
+  width: 30px;
+  height: 2px;
+  background-color: #e1b6a5;
 }
-.container nav .img img {
+.container .left nav p {
+  display: none;
+}
+.container .left nav .img {
+  max-width: 10rem;
+  cursor: pointer;
+}
+.container .left nav .img img {
   width: 100%;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -110,23 +128,105 @@ table {
   -o-border-radius: 50%;
   border: 8px solid #ca7d60;
 }
-.container nav ul {
+.container .left nav ul {
   display: flex;
   flex-flow: column;
   gap: 1.5rem;
 }
-.container nav ul li a {
-  font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+.container .left nav ul li a {
+  font-family: "Mulish", sans-serif;
   font-weight: bold;
   color: #CFA3A6;
 }
-.container nav ul li a:hover {
+.container .left nav ul li a:hover {
   color: rgba(248, 249, 250, 0.7);
 }
 
 /* End Nav Bar*/
+body {
+  position: relative;
+}
+
 .container {
   display: flex;
-  gap: 2rem;
-  width: 100%;
+  max-width: 100%;
+}
+.container .right {
+  max-width: 75rem;
+  padding-top: 250px;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  /* Start About Section*/
+  /* End About Section*/
+}
+.container .right .about,
+.container .right .experience,
+.container .right .education,
+.container .right .awards,
+.container .right .skills,
+.container .right .interests {
+  padding-left: 3rem;
+}
+.container .right hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+.container .right .about {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+.container .right .about .adress {
+  font-size: 1.5rem;
+  color: #6c757d;
+  letter-spacing: -0.5px;
+  word-spacing: -3px;
+  margin-bottom: 4rem;
+}
+.container .right .about .adress a {
+  border-bottom: 2px solid #bd5d38;
+  color: #bd5d38;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.container .right .about h1 {
+  font-size: 5rem;
+  color: #343A40;
+  font-family: "Cambay", sans-serif;
+  font-weight: bold;
+  letter-spacing: -2px;
+  word-spacing: -3px;
+}
+.container .right .about h1 span {
+  color: #bd5d38;
+}
+.container .right .about p {
+  font-family: "Cambay", sans-serif;
+  font-size: 1.18rem;
+  color: #6c757d;
+  margin-bottom: 4rem;
+  line-height: 30px;
+}
+.container .right .about .social-media {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 200px;
+}
+.container .right .about .social-media a {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #495057;
+}
+.container .right .about .social-media a:hover {
+  background-color: #bd5d38;
+}
+.container .right .about .social-media a i {
+  color: white;
 }/*# sourceMappingURL=home.css.map */
