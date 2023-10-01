@@ -388,6 +388,24 @@ body {
   font-weight: normal;
   font-size: 1.1rem;
 }
+.container .right .interests {
+  padding-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-flow: column;
+}
+.container .right .interests h2 {
+  font-size: 2rem;
+  color: #343A40;
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+.container .right .interests p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  line-height: 25px;
+  padding-bottom: 10px;
+}
 @media (max-width: 767.98px) {
   .container .right .experience .box .date-header,
   .container .right .education .box .date-header {

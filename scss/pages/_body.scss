@@ -91,8 +91,8 @@ body {
     /* Start Experience & Education Section*/
     .experience,
     .education {
-        padding-top:$sectionPadding;
-        margin-bottom: $sectionPadding;
+      padding-top: $sectionPadding;
+      margin-bottom: $sectionPadding;
       display: flex;
       flex-flow: column;
       gap: 3rem;
@@ -141,8 +141,8 @@ body {
 
     /* Start Skills Section*/
     .skills {
-        padding-top:$sectionPadding;
-        margin-bottom: $sectionPadding;
+      padding-top: $sectionPadding;
+      margin-bottom: $sectionPadding;
       display: flex;
       flex-flow: column;
       gap: 2rem;
@@ -165,19 +165,37 @@ body {
         font-size: 1.5rem;
         color: $primary-color;
       }
-      .futures{
-        p{
-            font-weight: normal;
-            font-size: 1.1rem;
+      .futures {
+        p {
+          font-weight: normal;
+          font-size: 1.1rem;
         }
       }
     }
     /* End Skills Section*/
 
     /* Start Interests Section*/
-    
-       /* End Interests Section*/
+    .interests {
+      padding-top: $sectionPadding;
+      margin-bottom: $sectionPadding;
+      display: flex;
+      flex-flow: column;
 
+      h2 {
+        font-size: 2rem;
+        color: $header-color;
+        font-weight: bold;
+        padding-bottom: 3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: $primary-color;
+        line-height: 25px;
+        padding-bottom: 10px;
+      }
+    }
+    /* End Interests Section*/
   }
 
   @include breakpoint(md) {
