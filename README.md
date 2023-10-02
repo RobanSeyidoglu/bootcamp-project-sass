@@ -43,12 +43,9 @@
 
 ## Features
 
-
-
 ## Acknowledgements
-
 
 ## Contact
 
 - GitHub [@RobanSeyidoglu](https://github.com/RobanSeyidoglu)
--LinkedIn [@RobanSeyidoglu][https://www.linkedin.com/in/roban-seyidoglu/]
+  -LinkedIn [@RobanSeyidoglu](https://www.linkedin.com/in/roban-seyidoglu/)

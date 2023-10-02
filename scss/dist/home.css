@@ -191,6 +191,7 @@ table {
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 100;
     background-color: #bd5d38;
