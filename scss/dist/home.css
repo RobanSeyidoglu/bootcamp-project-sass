@@ -162,23 +162,38 @@ table {
   }
   .container .right .about #adress {
     font-size: 5vw;
-    line-height: 30px;
+    line-height: 40px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
   }
   .container .right .about #adress a {
     font-size: 5vw;
   }
+  .container .left {
+    position: fixed;
+    width: 100vw;
+    background-color: #bd5d38;
+  }
   .container .left nav {
     flex-flow: column;
-    width: 100vw;
+    justify-content: flex-start;
+    width: 100%;
     min-height: 5rem;
-    position: fixed;
     align-items: flex-start;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .container .left nav .icon-name {
     width: 100%;
+    padding-top: 1rem;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 100;
+    background-color: #bd5d38;
   }
   .container .left nav .icon-name p {
     display: block;
@@ -201,14 +216,32 @@ table {
     display: none;
   }
   .container .left nav ul {
-    display: none;
     text-align: start;
     font-size: 1rem;
     font-weight: bold;
     padding-bottom: 1rem;
+    transition: all ease-in-out 0.5s;
+    width: 100%;
   }
   .container .left nav ul li a {
     color: white;
+  }
+  .container .left nav .ul-hide {
+    position: fixed;
+    transform: translateY(-200px);
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    padding-inline-start: 1rem;
+  }
+  .container .left nav .ul-show {
+    transform: initial;
+    top: 80px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: #bd5d38;
+    padding-inline-start: 1rem;
   }
 }
 /* End Responsive Nav Bar*/

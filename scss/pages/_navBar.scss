@@ -22,6 +22,7 @@
         flex-flow: column;
         gap: 7px;
         display: none;
+
         span {
           width: 30px;
           height: 2px;
@@ -49,6 +50,7 @@
         display: flex;
         flex-flow: column;
         gap: 1.5rem;
+
         li a {
           font-family: $navFontFamily;
           font-weight: bold;
@@ -83,7 +85,10 @@
         }
         #adress {
           font-size: 5vw;
-          line-height: 30px;
+          line-height: 40px;
+          display: flex;
+          flex-flow: column;
+          gap: 20px;
           a {
             font-size: 5vw;
           }
@@ -91,19 +96,29 @@
       }
     }
     .left {
+      position: fixed;
+      width: 100vw;
+      background-color: $secondary-color;
+
       nav {
         flex-flow: column;
-        width: 100vw;
+        // width: 100vw;
+        justify-content: flex-start;
+        width: 100%;
         min-height: 5rem;
-        position: fixed;
         align-items: flex-start;
-        padding: 1rem;
+        padding: 0 1rem 1rem 1rem;
+        position: relative;
+        height: fit-content;
 
         .icon-name {
           width: 100%;
-
+          padding-top: 1rem;
           display: flex;
           justify-content: space-between;
+          position: relative;
+          z-index: 100;
+          background-color: $secondary-color;
           p {
             display: block;
             color: white;
@@ -126,14 +141,34 @@
           display: none;
         }
         ul {
-          display: none;
           text-align: start;
           font-size: 1rem;
           font-weight: bold;
           padding-bottom: 1rem;
+          transition: all ease-in-out 0.5s;
+          width: 100%;
+
           li a {
             color: white;
           }
+        }
+        .ul-hide {
+          position: fixed;
+          transform: translateY(-200px);
+          z-index: 10;
+          width: 100%;
+          left: 0;
+
+          padding-inline-start: 1rem;
+        }
+        .ul-show {
+          transform: initial;
+          top: 80px;
+          width: 100%;
+          position: fixed;
+          left: 0;
+          background-color: $secondary-color;
+          padding-inline-start: 1rem;
         }
       }
     }
