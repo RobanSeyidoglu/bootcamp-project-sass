@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://robanseyidoglu.github.io/resume-template-sass/">
+    <a href="https://robanseyidoglu.github.io/bootcamp-project-sass/">
       Demo
     </a>
     <span> | </span>
@@ -51,4 +51,4 @@
 ## Contact
 
 - GitHub [@RobanSeyidoglu](https://github.com/RobanSeyidoglu)
--LinkedIn [@Robanseyidoglu][https://www.linkedin.com/in/roban-seyidoglu/]
+-LinkedIn [@RobanSeyidoglu][https://www.linkedin.com/in/roban-seyidoglu/]
